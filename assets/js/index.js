@@ -24,6 +24,7 @@ class Animal {
     }
 
     get Comentario() {
+        
         return this._comentario;
     }
 
@@ -33,3 +34,64 @@ class Animal {
 
 
 }
+
+// Class Leon
+class Leon extends Animal {
+    constructor(name,edad, img, comentario, sound) {
+        super(name,edad, img, comentario, sound);
+    }
+
+    Rugir() {
+        return `<audio src="${this.Sound}" autoplay></audio>`;
+    }
+}
+
+// Class Lobo
+class Lobo extends Animal {
+    constructor(name,edad, img, comentario, sound) {
+        super(name,edad, img, comentario, sound);
+    }
+
+    Aullar() {
+        return `<audio src="${this.Sound}" autoplay></audio>`;
+    }
+}
+
+// Class Oso
+
+class Oso extends Animal {
+    constructor(name,edad, img, comentario, sound) {
+        super(name,edad, img, comentario, sound);
+    }
+
+    Grunir() {
+        return `<audio src="${this.Sound}" autoplay></audio>`;
+    }
+}
+
+// Class Serpiente
+
+class Serpiente extends Animal {
+    constructor(name,edad, img, comentario, sound) {
+        super(name,edad, img, comentario, sound);
+    }
+
+    Sisear() {
+        return `<audio src="${this.Sound}" autoplay></audio>`;
+    }
+}
+
+// Class Aguila
+
+class Aguila extends Animal {
+    constructor(name,edad, img, comentario, sound) {
+        super(name,edad, img, comentario, sound);
+    }
+
+    Chillar() {
+        return `<audio src="${this.Sound}" autoplay></audio>`;
+    }
+}
+
+
+export { Animal,Leon, Lobo,Oso,Serpiente,Aguila }

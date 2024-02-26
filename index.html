@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!--head-->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animales en investigación</title>
-
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/estilos.css" />
   </head>
+  
+  <!--body-->
+
   <body>
+    <!--SECCION IZQ-->
     <div class="row">
       <div
-        class="col-12 card col-sm-7 text-center p-4 bg-warning shadow-lg"
-        id="Tabla"
-      >
+        class="col-12 card col-sm-7 text-center p-3 fondo shadow-lg"
+        id="Tabla">
         <h3>Animales en investigación</h3>
         <hr class="my-0 bg-dark w-75 mx-auto" />
+        
+        <!--TABLA IZQUIERDA -->
+        <div id="Animales" class="my-3 p-2 d-flex align-items-start justify-content-start flex-wrap bg-dark">
 
-        <div
-          id="Animales"
-          class="my-3 p-3 d-flex align-items-start justify-content-start flex-wrap bg-dark"
-        ></div>
+          
+       </div>
       </div>
-      <div class="card col-12 col-sm-4 bg-warning text-dark offset-1 shadow-lg">
+
+<!--SECCION DERECHA-->
+      <div class="card col-12 col-sm-4 text-dark offset-1 shadow-lg fondo">
         <div class="card-body">
           <h5 class="card-title">Registrar animal en:</h5>
           <h6 class="card-subtitle mb-2 text-muted">
@@ -33,6 +39,7 @@
           </h6>
           <hr />
           <div class="card-text my-3">
+          <!--ANIMAL-->
             <div class="form-group">
               <label for="exampleInputPassword1">Nombre del animal:</label>
               <select class="form-control bg-dark text-white" id="animal">
@@ -43,8 +50,9 @@
                 <option value="Serpiente">Serpiente</option>
                 <option value="Aguila">Águila</option>
               </select>
+              <p class="text-danger" id="errorAnimal"></p>
             </div>
-
+            <!--EDAD-->
             <div class="form-group">
               <label for="exampleInputPassword1">Años de edad estimados:</label>
               <select class="form-control bg-dark text-white" id="edad">
@@ -57,8 +65,9 @@
                 <option value="8 - 10 años">8 - 10 años</option>
                 <option value="Más de 10 años">Más de 10 años</option>
               </select>
+              <p class="text-danger" id="errorEdad"></p>
             </div>
-
+            <!--COMENTARIOS-->
             <div class="form-group">
               <label for="exampleInputPassword1">Comentarios:</label>
               <textarea
@@ -66,33 +75,34 @@
                 class="form-control shadow-lg bg-dark text-white"
                 id="comentarios"
               ></textarea>
+              <p class="text-danger" id="errorComentarios"></p>
             </div>
-
+            <!--IMAGEN-->
             <div class="p-5 card bg-dark">
               <div id="preview"></div>
             </div>
           </div>
-
+          <!--BOTON-->
           <btn class="btn btn-light d-block" id="btnRegistrar">Agregar</btn>
         </div>
       </div>
     </div>
 
-    <audio id="player" class="d-none"></audio>
 
-    <div class="modal fade" id="exampleModal">
+
+    <!--MODAL-->
+     
+    <div class="modal fade" id="animalModal">
       <div class="modal-dialog modal-dialog-centered w-25" role="document">
         <div class="modal-content bg-dark">
-          <div class="modal-body">...</div>
+          <img src="" id="animalModalImg" class="card-img-top" alt="...">
+          <div class="modal-body text-white f-3"></div>
         </div>
       </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -104,5 +114,6 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="assets/js/index.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
