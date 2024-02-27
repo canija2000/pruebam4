@@ -15,24 +15,30 @@
   <!--body-->
 
   <body>
+    <main class="shadow-lg">
+    <!--HEADER-->
+    <header id="header" class="text-white text-center">
+      <img src="assets/imgs/header-export.png" alt="header" class="img-fluid" />
+    </header>
+      
     <!--SECCION IZQ-->
-    <div class="row">
+    <div class="row mb-2">
       <div
-        class="col-12 card col-sm-7 text-center p-3 fondo shadow-lg"
+        class="col-12 card col-sm-7 text-center p-3 fondo shadow-lg mb-2"
         id="Tabla">
         <h3>Animales en investigación</h3>
-        <hr class="my-0 bg-dark w-75 mx-auto" />
+        <hr class="my-2 w-75 mx-auto" />
         
         <!--TABLA IZQUIERDA -->
-        <div id="Animales" class="my-3 p-2 d-flex align-items-start justify-content-start flex-wrap bg-dark">
+        <div id="Animales" class="m-2 p-2 d-flex align-items-start justify-content-start flex-wrap">
 
           
        </div>
       </div>
 
 <!--SECCION DERECHA-->
-      <div class="card col-12 col-sm-4 text-dark offset-1 shadow-lg fondo">
-        <div class="card-body">
+      <div class="card col-12 col-sm-4 text-dark offset-1  shadow-lg fondo">
+        <div class="card-body p-2">
           <h5 class="card-title">Registrar animal en:</h5>
           <h6 class="card-subtitle mb-2 text-muted">
             Ingrese los datos del animal
@@ -42,7 +48,7 @@
           <!--ANIMAL-->
             <div class="form-group">
               <label for="exampleInputPassword1">Nombre del animal:</label>
-              <select class="form-control bg-dark text-white" id="animal">
+              <select class="form-control ff text-white" id="animal">
                 <option disabled selected>Seleccione un animal</option>
                 <option value="Leon">León</option>
                 <option value="Lobo">Lobo</option>
@@ -55,7 +61,7 @@
             <!--EDAD-->
             <div class="form-group">
               <label for="exampleInputPassword1">Años de edad estimados:</label>
-              <select class="form-control bg-dark text-white" id="edad">
+              <select class="form-control ff text-white" id="edad">
                 <option disabled selected>Seleccione un rango de años</option>
 
                 <option value="0 - 1 años">0 - 1 años</option>
@@ -72,18 +78,18 @@
               <label for="exampleInputPassword1">Comentarios:</label>
               <textarea
                 rows="5"
-                class="form-control shadow-lg bg-dark text-white"
+                class="form-control shadow-lg ff text-white"
                 id="comentarios"
               ></textarea>
               <p class="text-danger" id="errorComentarios"></p>
             </div>
             <!--IMAGEN-->
-            <div class="p-5 card bg-dark">
+            <div class="p-5 card ff">
               <div id="preview"></div>
             </div>
           </div>
           <!--BOTON-->
-          <btn class="btn btn-light d-block" id="btnRegistrar">Agregar</btn>
+          <btn class="btn btn-outline-light d-block" id="btnRegistrar">Agregar</btn>
         </div>
       </div>
     </div>
@@ -100,7 +106,7 @@
         </div>
       </div>
     </div>
-
+    </main>
     <!--SCRIPTS-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script

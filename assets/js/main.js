@@ -30,8 +30,11 @@ import { Animal, Leon, Lobo, Oso, Serpiente, Aguila } from "./index.js";
         } else {
             errorEdad.html("");
         }
-        if (!comentarios.val()) {
-            errorComentarios.html("Debe ingresar un comentario");
+        //validacion con expresion regular
+
+        let regex = /\b\w+\b.*\b\w+\b/;
+        if (!regex.test(comentarios.val())) {
+            errorComentarios.html("Debe ingresar un comentari(al menos dos palabras)");
             isValid = false;
         } else {
             errorComentarios.html("");

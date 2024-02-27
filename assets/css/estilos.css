@@ -4,9 +4,8 @@
 }
 
 body {
-  background-image: url("../imgs/sabana-170907.jpg");
+  background-image: url("../imgs/watercolor-tigers-wild-animal-seamless-pattern-julien.jpg");
   background-size: auto;
-  background-repeat: no-repeat;
   height: 100vh;
   padding: 100px;
   font-family: Roboto;
@@ -17,22 +16,38 @@ body {
 #preview {
   height: 200px;
   background-image: url(../imgs/lion.svg);
-  background-position: top;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
+.ff{
+  background-color: #454d39;
+}
+/*header*/
+main{
+  background-color: #a6b097;
+  padding: 5rem;
+  border-radius: 2rem;
 
+ 
+}
 /* Tabla de Participantes */
+#tabla{
+  background-color: #a6b097;
+  padding: 2rem;
+  border-radius: 1.5rem;
 
+}
 .fondo{
-  background-color: #d7b030;
+  background-color: #a6b097;
   padding: 2rem;
   border-radius: 1.5rem;
 }
 #Animales {
-  height: 100vh;
-  background: #f0f0f0;
+  height: auto;
+  background: #454d39;
+  border-radius: 1rem;
 }
 
 #Animales div div {
@@ -78,3 +93,13 @@ body {
     max-width: 85% !important;
 }
 
+/*override menu */
+
+.form-control {
+  background-color: #454d39;
+  color: white; 
+} 
+
+.form-control:focus {
+  background-color: #454d39;
+}
